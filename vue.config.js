@@ -5,6 +5,7 @@ module.exports = defineConfig({
   pwa: {
     iconPaths: null
   },
+  publicPath: "/stardew-valley-save-fix/",
   chainWebpack: (config) => {
     config.resolve.alias.set('vue', '@vue/compat')
 
