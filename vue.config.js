@@ -2,6 +2,9 @@ const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
   transpileDependencies: true,
   outputDir: "docs",
+  pwa: {
+    iconPaths: null
+  },
   chainWebpack: (config) => {
     config.resolve.alias.set('vue', '@vue/compat')
 
